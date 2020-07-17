@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Grade 7 Science  |  Quaz
+        </title>
+    </head>
+<body>
+
+<script>
+function next() {
+    var bar = document.getElementById('file');
+    if (progress.value === 16) {
+    checkAnswers()
+    } else {
+	bar.value = 
+    parseInt(bar.value) + 1;
+    document.getElementById('out').innerHTML = bar.value+"/"+limit
+    Add()
+   }
+}
+
+function Add() {}
+
+function checkAnswers() {}
+</script>
+
+<h1>The progress element</h1>
+
+<div>
+<h1> How does the glow stick work?? </h1>
+<br>
+<a class="ans">Answer(la):</a>
+<br>
+<textarea id="answer1" class="res"></textarea>
+</div>
+
+<label for="file">Quiz progress:</label>
+<progress id="file" value="0" max="16"> 32% </progress>
+:<span id="out"></span>
+<br>
+<button onclick="next()">Continue</button>
+
+<script>
+	var progress = 0
+    var limit = document.getElementById('file').max;
+    document.getElementById('out').innerHTML = progress+"/"+limit
+</script>
+</body>
+</html>
