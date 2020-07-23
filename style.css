@@ -1,0 +1,12 @@
+.ans {
+    border-radius: 24pt;
+    border-width: 12pt;
+    border-color: aqua;
+    background-color: rgba(212, 114, 171, 5);
+}
+
+.res {
+    border-radius: 24pt;
+    border-width: 12pt;
+    border-color: aqua;
+}
